@@ -472,20 +472,38 @@ footer {
 }
 
 .slide-content {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 2rem;
-    border-radius: 15px;
-    backdrop-filter: blur(5px);
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
-.slide-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
+/* Sembunyikan heading dan paragraf */
+.slide-content h2,
 .slide-content p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    display: none;
+}
+
+/* Style tombol saja */
+.slide-btn {
+    background: #ff6b35;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.slide-btn:hover {
+    background: #e55a2b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 
 /* Tombol navigasi slideshow */
