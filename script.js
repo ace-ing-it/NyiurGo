@@ -77,7 +77,7 @@ const culturalItems = [
         id: 2,
         name: "Tari Maengket",
         description: "Tarian tradisional yang melambangkan rasa syukur atas hasil panen. Ditarikan secara berkelompok dengan gerakan lembut dan dinamis.",
-        image: "https://images.unsplash.com/photo-1549476464-373e68f1f6e7?w=400",
+        image: "https://1001indonesia.net/asset/2022/01/Tari-Maengket.jpg",
         video: "https://youtu.be/hTzr3OBbPmo?si=_o8gN2omublEpWuhttps://i.ytimg.com/vi/hTzr3OBbPmo/maxresdefault.jpg",
         history: "Maengket adalah tarian panen yang sudah ada sejak zaman nenek moyang orang Minahasa sebagai ungkapan terima kasih kepada Tuhan atas hasil panen yang melimpah."
     },
