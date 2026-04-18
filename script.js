@@ -104,41 +104,6 @@ const culturalItems = [
     }
 ];
 
-// Data Souvenir
-const souvenirs = [
-    {
-        id: 1,
-        name: "Abon Cakalang",
-        description: "Abon ikan cakalang khas Manado dengan rasa gurih dan pedas. Cocok sebagai oleh-oleh khas Sulawesi Utara. Tahan lama dan praktis dibawa.",
-        image: "https://images.unsplash.com/photo-1588601794265-b330b4f9e22c?w=400",
-        price: "Rp 35.000",
-        whatsapp: "628123456789"
-    },
-    {
-        id: 2,
-        name: "Klapertart",
-        description: "Pie tradisional dengan isian buah, kelapa muda, dan krim keju. Dessert legendaris dari Manado yang wajib dicoba.",
-        image: "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=400",
-        price: "Rp 150.000 (ukuran sedang)",
-        whatsapp: "628123456789"
-    },
-    {
-        id: 3,
-        name: "Kerajinan Tikar Pandan",
-        description: "Tikar anyaman daun pandan dengan motif khas Minahasa. Buatan tangan berkualitas tinggi, cocok untuk alas duduk atau dekorasi.",
-        image: "https://images.unsplash.com/photo-1611138477436-df28a2b37b14?w=400",
-        price: "Rp 75.000 - Rp 200.000",
-        whatsapp: "628123456789"
-    },
-    {
-        id: 4,
-        name: "Patung Kayu Ukir",
-        description: "Patung tradisional dari kayu cempaka dengan motif budaya Minahasa. Karya seni yang unik dan bernilai seni tinggi.",
-        image: "https://images.unsplash.com/photo-1549887552-cb1071d3e5ca?w=400",
-        price: "Rp 150.000 - Rp 500.000",
-        whatsapp: "628123456789"
-    }
-];
 
 // State Management
 let currentPage = "home";
@@ -179,10 +144,6 @@ function loadPage(page) {
             main.innerHTML = renderCulture();
             attachCultureEvents();
             break;
-        case "souvenirs":
-            main.innerHTML = renderSouvenirs();
-            attachSouvenirEvents();
-            break;
         default:
             main.innerHTML = renderHome();
             attachHomeEvents();
@@ -196,19 +157,10 @@ function loadPage(page) {
         }
     });
 }
-
 function renderHome() {
     return `
         <div class="container">
-            <div class="hero">
-                <h2>Explore North Sulawesi Smartly & Easily</h2>
-                <p>Temukan keindahan alam, budaya, dan kuliner khas Sulawesi Utara</p>
-                <div class="hero-buttons">
-                    <button class="btn-primary" data-nav="sights">See The Sights</button>
-                    <button class="btn-primary" data-nav="culture">Cultural Information</button>
-                    <button class="btn-primary" data-nav="souvenirs">Souvenirs to Bring Home</button>
-                </div>
-            </div>
+            ${renderSlideshow()}
             
             <div class="quick-buttons">
                 <div class="quick-card" data-nav="sights">
@@ -220,11 +172,6 @@ function renderHome() {
                     <i class="fas fa-landmark"></i>
                     <h3>Cultural Information</h3>
                     <p>Kenali budaya Sulawesi Utara</p>
-                </div>
-                <div class="quick-card" data-nav="souvenirs">
-                    <i class="fas fa-shopping-bag"></i>
-                    <h3>Souvenirs to Bring Home</h3>
-                    <p>Oleh-oleh khas UMKM lokal</p>
                 </div>
                 <div class="quick-card" id="travelCalcBtn">
                     <i class="fas fa-calculator"></i>
@@ -500,9 +447,7 @@ function showTravelCalculator() {
     };
 }
 
-// Event Handlers
 function attachHomeEvents() {
-    // Hero buttons
     document.querySelectorAll('[data-nav]').forEach(btn => {
         btn.addEventListener('click', (e) => {
             const page = btn.getAttribute('data-nav');
@@ -510,7 +455,6 @@ function attachHomeEvents() {
         });
     });
     
-    // Quick buttons
     document.querySelectorAll('.quick-card[data-nav]').forEach(card => {
         card.addEventListener('click', () => {
             const page = card.getAttribute('data-nav');
@@ -518,12 +462,17 @@ function attachHomeEvents() {
         });
     });
     
-    // Travel calculator button
     const travelCalcBtn = document.getElementById('travelCalcBtn');
     if(travelCalcBtn) {
         travelCalcBtn.addEventListener('click', showTravelCalculator);
     }
+    
+    // Inisialisasi slideshow
+    startSlideshow();
+    attachSlideshowEvents();
 }
+    
+    
 
 function attachSightsEvents() {
     document.querySelectorAll('.btn-detail').forEach(btn => {
@@ -581,6 +530,90 @@ function init() {
     initNavigation();
     loadPage('home');
 }
+// ===== SLIDESHOW DATA & FUNCTIONS =====
+const slides = [
+    {
+        image: "https://asset.tribunnews.com/v-nLazlUDr43roymCM-aQibKVfA=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/manado/foto/bank/originals/foto-keindahan-taman-sindulang-manado-sulawesi-utara-rabu-26420238.jpg",
+        title: "Taman Sindulang",
+        description: "Keindahan taman kota di Manado"
+    },
+    {
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJU5KLpPFCVCHc_cffQaA5xhE0zLwBf3z-FQ&s",
+        title: "Pesona Sulawesi Utara",
+        description: "Destinasi wisata menakjubkan menanti Anda"
+    },
+    {
+        image: "https://images.unsplash.com/photo-1589189373335-0f4f8b9d8f2c?w=1200",
+        title: "Jelajahi Bunaken",
+        description: "Surga bawah laut kelas dunia"
+    }
+];
 
+let currentSlide = 0;
+let slideInterval;
+
+function renderSlideshow() {
+    return `
+        <div class="hero-slideshow" id="heroSlideshow">
+            ${slides.map((slide, index) => `
+                <div class="slide ${index === 0 ? 'active' : ''}" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('${slide.image}');">
+                    <div class="slide-content">
+                        <h2>${slide.title}</h2>
+                        <p>${slide.description}</p>
+                        <button class="slide-btn" data-nav="sights">Mulai Jelajahi</button>
+                    </div>
+                </div>
+            `).join('')}
+            <div class="slide-dots">
+                ${slides.map((_, index) => `
+                    <span class="dot ${index === 0 ? 'active' : ''}" data-slide="${index}"></span>
+                `).join('')}
+            </div>
+        </div>
+    `;
+}
+
+function startSlideshow() {
+    if (slideInterval) clearInterval(slideInterval);
+    slideInterval = setInterval(() => {
+        let nextSlide = (currentSlide + 1) % slides.length;
+        goToSlide(nextSlide);
+    }, 5000);
+}
+
+function goToSlide(index) {
+    const slidesElements = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    
+    if (slidesElements.length === 0) return;
+    
+    slidesElements[currentSlide].classList.remove('active');
+    if (dots[currentSlide]) dots[currentSlide].classList.remove('active');
+    
+    currentSlide = index;
+    
+    slidesElements[currentSlide].classList.add('active');
+    if (dots[currentSlide]) dots[currentSlide].classList.add('active');
+}
+
+function attachSlideshowEvents() {
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach(dot => {
+        dot.addEventListener('click', (e) => {
+            const index = parseInt(dot.getAttribute('data-slide'));
+            goToSlide(index);
+            startSlideshow(); // Reset timer
+        });
+    });
+    
+    // Tombol "Mulai Jelajahi" di slideshow
+    const slideBtns = document.querySelectorAll('.slide-btn');
+    slideBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const page = btn.getAttribute('data-nav');
+            if(page) loadPage(page);
+        });
+    });
+}
 // Run when DOM is ready
 document.addEventListener('DOMContentLoaded', init);
