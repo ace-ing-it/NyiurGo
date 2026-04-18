@@ -9,7 +9,7 @@ const destinations = [
         hours: "08:00 - 17:00 WITA",
         rating: 4.8,
         reviews: []
-        
+
     },
     {
         id: 2,
@@ -69,7 +69,7 @@ const culturalItems = [
         id: 1,
         name: "Tari Kabasaran",
         description: "Tarian perang tradisional Minahasa yang menggambarkan keberanian prajurit. Para penari menggunakan pakaian adat lengkap dengan senjata parang dan tombak.",
-        image: "https://img.inews.co.id/media/1200/files/inews_new/2022/11/13/terian_kabasaran.jpg",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlXt3Z040nKSOcU7gYiSu2NJcARKz-x5Xy_w&s",
         video: "https://youtu.be/27CqwfBq5No?si=9gCv_u--VgVHUCNt",
         history: "Tari Kabasaran berasal dari Minahasa, Sulawesi Utara. Tarian ini awalnya ditampilkan sebelum para prajurit berperang untuk membangkitkan semangat juang. Para penari disebut 'Kabasaran' yang berarti prajurit pilihan."
     },
