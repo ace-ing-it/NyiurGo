@@ -4,9 +4,8 @@ const destinations = [
         id: 1,
         name: "Taman Nasional Bunaken",
         description: "Surga bawah laut dengan keanekaragaman hayati laut tertinggi di dunia. Terumbu karang yang indah dan berbagai spesies ikan tropis.",
-        image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS25uP3SibFKNughsTDcDuLBorwmEkAYgSIBQ&s",
         location: "https://maps.google.com/?q=Bunaken+National+Park",
-        ticketPrice: "Rp 50.000 - Rp 150.000",
         hours: "08:00 - 17:00 WITA",
         rating: 4.8,
         reviews: []
@@ -15,9 +14,8 @@ const destinations = [
         id: 2,
         name: "Gunung Lokon",
         description: "Gunung berapi aktif dengan pemandangan menakjubkan dari puncaknya. Spot favorit untuk hiking dan melihat sunrise.",
-        image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400",
+        image: "https://cdn1-production-images-kly.akamaized.net/jSqbfbsOPPUisY7uahLFtp8faNw=/1200x900/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4841919/original/002398600_1716560987-WhatsApp_Image_2024-05-24_at_21.10.49.jpeg",
         location: "https://maps.google.com/?q=Mount+Lokon",
-        ticketPrice: "Rp 30.000 (pendakian)",
         hours: "06:00 - 16:00 WITA",
         rating: 4.5,
         reviews: []
@@ -26,9 +24,8 @@ const destinations = [
         id: 3,
         name: "Danau Tondano",
         description: "Danau terluas di Sulawesi Utara dengan pemandangan indah dan restoran apung yang terkenal.",
-        image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400",
+        image: "https://img.inews.co.id/media/620/files/inews_new/2023/08/11/legenda_danau_tondano.jpg",
         location: "https://maps.google.com/?q=Lake+Tondano",
-        ticketPrice: "Rp 15.000",
         hours: "24 Jam",
         rating: 4.3,
         reviews: []
@@ -37,9 +34,8 @@ const destinations = [
         id: 4,
         name: "Pa'Dior Cultural Center",
         description: "Pusat kebudayaan yang menampilkan berbagai seni dan budaya khas Sulawesi Utara.",
-        image: "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=400",
+        image: "https://indonesiakaya.com/wp-content/uploads/2020/10/7__IMG_8227_Di_sini_pengunjung_juga_bisa_melihat_alat_musik_tiup_contra_bass_berukuran_raksasa_CROP.jpg",
         location: "https://maps.google.com/?q=Pa%27Dior+Cultural+Center",
-        ticketPrice: "Rp 25.000",
         hours: "09:00 - 18:00 WITA",
         rating: 4.6,
         reviews: []
@@ -48,9 +44,8 @@ const destinations = [
         id: 5,
         name: "Danau Linow",
         description: "Danau unik yang dapat berubah warna karena kandungan belerang. Spot foto yang sangat populer.",
-        image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400",
+        image: "https://www.tempatwisata.pro/users_media/3150/Danau%20Linow.jpg",
         location: "https://maps.google.com/?q=Lake+Linow",
-        ticketPrice: "Rp 20.000",
         hours: "07:00 - 18:00 WITA",
         rating: 4.7,
         reviews: []
@@ -59,13 +54,12 @@ const destinations = [
         id: 6,
         name: "Paal Beach",
         description: "Pantai dengan pasir putih dan air jernih. Cocok untuk bersantai dan snorkeling.",
-        image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400",
+        image: "https://thumbs.dreamstime.com/b/beautiful-paal-beach-likupang-manado-indonesia-view-254006924.jpg",
         location: "https://maps.google.com/?q=Paal+Beach",
-        ticketPrice: "Rp 10.000",
         hours: "07:00 - 18:00 WITA",
         rating: 4.4,
         reviews: []
-    }
+    },
 ];
 
 // Data Budaya
@@ -74,8 +68,8 @@ const culturalItems = [
         id: 1,
         name: "Tari Kabasaran",
         description: "Tarian perang tradisional Minahasa yang menggambarkan keberanian prajurit. Para penari menggunakan pakaian adat lengkap dengan senjata parang dan tombak.",
-        image: "https://images.unsplash.com/photo-1535525153412-5a42439a210d?w=400",
-        video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        image: "https://img.inews.co.id/media/1200/files/inews_new/2022/11/13/terian_kabasaran.jpg",
+        video: "https://youtu.be/27CqwfBq5No?si=9gCv_u--VgVHUCNt",
         history: "Tari Kabasaran berasal dari Minahasa, Sulawesi Utara. Tarian ini awalnya ditampilkan sebelum para prajurit berperang untuk membangkitkan semangat juang. Para penari disebut 'Kabasaran' yang berarti prajurit pilihan."
     },
     {
@@ -83,23 +77,23 @@ const culturalItems = [
         name: "Tari Maengket",
         description: "Tarian tradisional yang melambangkan rasa syukur atas hasil panen. Ditarikan secara berkelompok dengan gerakan lembut dan dinamis.",
         image: "https://images.unsplash.com/photo-1549476464-373e68f1f6e7?w=400",
-        video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        video: "https://youtu.be/hTzr3OBbPmo?si=_o8gN2omublEpWuhttps://i.ytimg.com/vi/hTzr3OBbPmo/maxresdefault.jpg",
         history: "Maengket adalah tarian panen yang sudah ada sejak zaman nenek moyang orang Minahasa sebagai ungkapan terima kasih kepada Tuhan atas hasil panen yang melimpah."
     },
     {
         id: 3,
         name: "Kolintang",
         description: "Alat musik tradisional dari kayu yang menghasilkan nada indah. Dimainkan dengan cara dipukul menggunakan stik khusus.",
-        image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400",
-        video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        image: "https://akcdn.detik.net.id/visual/2023/04/27/alat-musik-kolintang_169.jpeg?w=1200",
+        video: "https://youtu.be/qEERrx3-9Es?si=sQTlZhuldWG-9b_n",
         history: "Kolintang berasal dari kata 'Linting' yang berarti suara kecil. Alat musik ini berkembang di Minahasa sejak abad ke-19 dan terbuat dari kayu lokal seperti kayu cempaka."
     },
     {
         id: 4,
         name: "Rumah Panggung (Wale Wangko)",
         description: "Arsitektur tradisional rumah adat Minahasa dengan bentuk panggung dan atap yang menjulang tinggi.",
-        image: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=400",
-        video: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        image: "https://img.inews.co.id/media/1200/files/inews_new/2023/02/24/rumah_walewangko.jpg",
+        video: "https://www.youtube.com/embed/dQw4w9WgXchttps://youtu.be/zHY6nUVmGOU?si=9iz6XjC31Vv6PHHa",
         history: "Wale Wangko adalah rumah adat Minahasa yang digunakan sebagai tempat musyawarah dan upacara adat. Dibangun tanpa paku dengan struktur kayu yang kuat."
     }
 ];
