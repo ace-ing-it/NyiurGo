@@ -9,6 +9,7 @@ const destinations = [
         hours: "08:00 - 17:00 WITA",
         rating: 4.8,
         reviews: []
+        
     },
     {
         id: 2,
