@@ -99,6 +99,225 @@ const culturalItems = [
     }
 ];
 
+// ==================== DATA MANADO DIALECT ====================
+const dialectPhrases = [
+    { id: 1, indonesia: "Selamat pagi", manado: "Selamat pagi", english: "Good morning", mandarin: "早上好 (Zǎoshang hǎo)" },
+    { id: 2, indonesia: "Selamat siang", manado: "Selamat siang", english: "Good afternoon", mandarin: "下午好 (Xiàwǔ hǎo)" },
+    { id: 3, indonesia: "Selamat malam", manado: "Selamat malam", english: "Good evening", mandarin: "晚上好 (Wǎnshàng hǎo)" },
+    { id: 4, indonesia: "Selamat tinggal", manado: "Selamat tinggal", english: "Goodbye", mandarin: "再见 (Zàijiàn)" },
+    { id: 5, indonesia: "Terima kasih", manado: "Makasih", english: "Thank you", mandarin: "谢谢 (Xièxie)" },
+    { id: 6, indonesia: "Terima kasih banyak", manado: "Makasih banyak", english: "Thank you very much", mandarin: "非常感谢 (Fēicháng gǎnxiè)" },
+    { id: 7, indonesia: "Sama-sama", manado: "Sama-sama", english: "You're welcome", mandarin: "不客气 (Bù kèqi)" },
+    { id: 8, indonesia: "Maaf", manado: "Maaf", english: "Sorry", mandarin: "对不起 (Duìbuqǐ)" },
+    { id: 9, indonesia: "Permisi", manado: "Permisi", english: "Excuse me", mandarin: "打扰一下 (Dǎrǎo yīxià)" },
+    { id: 10, indonesia: "Iya", manado: "Iyo", english: "Yes", mandarin: "是 (Shì)" },
+    { id: 11, indonesia: "Tidak", manado: "Nda", english: "No", mandarin: "不是 (Bù shì)" },
+    { id: 12, indonesia: "Tidak tahu", manado: "Nda tau", english: "I don't know", mandarin: "不知道 (Bù zhīdào)" },
+    { id: 13, indonesia: "Tidak mengerti", manado: "Nda mangarti", english: "I don't understand", mandarin: "我不明白 (Wǒ bù míngbai)" },
+    { id: 14, indonesia: "Bisa bicara bahasa Inggris?", manado: "Boleh bicara bahasa Inggris?", english: "Can you speak English?", mandarin: "你会说英语吗？(Nǐ huì shuō Yīngyǔ ma?)" },
+    { id: 15, indonesia: "Tolong", manado: "Minta tolong", english: "Please", mandarin: "请 (Qǐng)" },
+    { id: 16, indonesia: "Ada yang bisa bantu?", manado: "Ada yang bisa bantu?", english: "Can someone help?", mandarin: "有人能帮忙吗？(Yǒurén néng bāngmáng ma?)" },
+    { id: 17, indonesia: "Saya butuh bantuan", manado: "Kita minta bantuan dang", english: "I need help", mandarin: "我需要帮助 (Wǒ xūyào bāngzhù)" },
+    { id: 18, indonesia: "Berapa harganya?", manado: "Depe harga brapa?", english: "How much is this?", mandarin: "这个多少钱？(Zhège duōshǎo qián?)" },
+    { id: 19, indonesia: "Mahal sekali", manado: "Mahal skali", english: "Too expensive", mandarin: "太贵了 (Tài guì le)" },
+    { id: 20, indonesia: "Bisa kurang?", manado: "Boleh kurang?", english: "Can you lower the price?", mandarin: "可以便宜一点吗？(Kěyǐ piányi yīdiǎn ma?)" },
+    { id: 21, indonesia: "Saya mau beli ini", manado: "Kita mo bli ini", english: "I want to buy this", mandarin: "我想买这个 (Wǒ xiǎng mǎi zhège)" },
+    { id: 22, indonesia: "Boleh coba?", manado: "Boleh coba?", english: "Can I try?", mandarin: "可以试一下吗？(Kěyǐ shì yīxià ma?)" },
+    { id: 23, indonesia: "Tolong bungkuskan", manado: "Tolong bungkus", english: "Please wrap it", mandarin: "请包起来 (Qǐng bāo qǐlái)" },
+    { id: 24, indonesia: "Saya mau makan", manado: "Kita mo makan", english: "I want to eat", mandarin: "我想吃饭 (Wǒ xiǎng chī fàn)" },
+    { id: 25, indonesia: "Saya mau minum", manado: "Kita mo minum", english: "I want to drink", mandarin: "我想喝水 (Wǒ xiǎng hē shuǐ)" },
+    { id: 26, indonesia: "Enak sekali", manado: "Enak skali", english: "Very delicious", mandarin: "非常好吃 (Fēicháng hǎochī)" },
+    { id: 27, indonesia: "Tidak enak", manado: "Nda enak", english: "Not tasty", mandarin: "不好吃 (Bù hǎochī)" },
+    { id: 28, indonesia: "Ada menu vegetarian?", manado: "Ada menu vegetarian?", english: "Is there a vegetarian menu?", mandarin: "有素食菜单吗？(Yǒu sùshí càidān ma?)" },
+    { id: 29, indonesia: "Saya alergi kacang", manado: "Kita alergi kacang", english: "I am allergic to peanuts", mandarin: "我对花生过敏 (Wǒ duì huāshēng guòmǐn)" },
+    { id: 30, indonesia: "Tolong air putih", manado: "Minta air putih dang", english: "Please give me water", mandarin: "请给我水 (Qǐng gěi wǒ shuǐ)" },
+    { id: 31, indonesia: "Di mana toilet?", manado: "WC ada di mana?", english: "Where is the toilet?", mandarin: "厕所在哪里？(Cèsuǒ zài nǎlǐ?)" },
+    { id: 32, indonesia: "Di mana hotel?", manado: "Hotel ada di mana?", english: "Where is the hotel?", mandarin: "酒店在哪里？(Jiǔdiàn zài nǎlǐ?)" },
+    { id: 33, indonesia: "Di mana bandara?", manado: "Bandara di mana?", english: "Where is the airport?", mandarin: "机场在哪里？(Jīchǎng zài nǎlǐ?)" },
+    { id: 34, indonesia: "Di mana stasiun?", manado: "Di mana stasiun?", english: "Where is the station?", mandarin: "车站在哪里？(Chēzhàn zài nǎlǐ?)" },
+    { id: 35, indonesia: "Belok kiri", manado: "Belok kiri", english: "Turn left", mandarin: "左转 (Zuǒ zhuǎn)" },
+    { id: 36, indonesia: "Belok kanan", manado: "Belok kanan", english: "Turn right", mandarin: "右转 (Yòu zhuǎn)" },
+    { id: 37, indonesia: "Lurus terus", manado: "Lurus trus", english: "Go straight", mandarin: "直走 (Zhí zǒu)" },
+    { id: 38, indonesia: "Berhenti di sini", manado: "Stop di sini", english: "Stop here", mandarin: "停在这里 (Tíng zài zhèlǐ)" },
+    { id: 39, indonesia: "Berapa lama ke sana?", manado: "Brapa lama sampe sana?", english: "How long to get there?", mandarin: "到那里需要多长时间？(Dào nàlǐ xūyào duō cháng shíjiān?)" },
+    { id: 40, indonesia: "Saya mau ke pantai", manado: "Kita mo ka pante", english: "I want to go to the beach", mandarin: "我想去海滩 (Wǒ xiǎng qù hǎitān)" },
+    { id: 41, indonesia: "Saya mau ke gunung", manado: "Kita mo ka gunung", english: "I want to go to the mountain", mandarin: "我想去山上 (Wǒ xiǎng qù shān shàng)" },
+    { id: 42, indonesia: "Saya mau ke pulau", manado: "Kita mo ka pulau", english: "I want to go to the island", mandarin: "我想去岛上 (Wǒ xiǎng qù dǎo shàng)" },
+    { id: 43, indonesia: "Sewa mobil berapa?", manado: "Sewa mobil brapa?", english: "How much for car rental?", mandarin: "租车多少钱？(Zū chē duōshǎo qián?)" },
+    { id: 44, indonesia: "Bisa antar ke sana?", manado: "Boleh antar ka sana?", english: "Can you take me there?", mandarin: "你能带我去那里吗？(Nǐ néng dài wǒ qù nàlǐ ma?)" },
+    { id: 45, indonesia: "Pukul berapa sekarang?", manado: "Jam brapa sekarang?", english: "What time is it?", mandarin: "现在几点了？(Xiànzài jǐ diǎn le?)" },
+    { id: 46, indonesia: "Jam berapa buka?", manado: "Buka jam?", english: "What time does it open?", mandarin: "几点开门？(Jǐ diǎn kāimén?)" },
+    { id: 47, indonesia: "Jam berapa tutup?", manado: "Tutup jam?", english: "What time does it close?", mandarin: "几点关门？(Jǐ diǎn guānmén?)" },
+    { id: 48, indonesia: "Boleh foto di sini?", manado: "Boleh ba foto di sini?", english: "Can I take a photo here?", mandarin: "可以在这里拍照吗？(Kěyǐ zài zhèlǐ pāizhào ma?)" },
+    { id: 49, indonesia: "Tolong foto saya", manado: "Tolong foto akang pa kita", english: "Please take my photo", mandarin: "请帮我拍照 (Qǐng bāng wǒ pāizhào)" },
+    { id: 50, indonesia: "Pemandangan indah", manado: "Pemandangan bagus", english: "Beautiful view", mandarin: "风景很美 (Fēngjǐng hěn měi)" },
+    { id: 51, indonesia: "Saya sakit", manado: "Kita ada sakit", english: "I am sick", mandarin: "我生病了 (Wǒ shēngbìng le)" },
+    { id: 52, indonesia: "Saya sakit perut", manado: "Ada sakit perut kita", english: "I have a stomachache", mandarin: "我肚子疼 (Wǒ dùzi téng)" },
+    { id: 53, indonesia: "Saya pusing", manado: "Ada pusing kita", english: "I am dizzy", mandarin: "我头晕 (Wǒ tóuyūn)" },
+    { id: 54, indonesia: "Saya demam", manado: "Ba rasa panas kita", english: "I have a fever", mandarin: "我发烧了 (Wǒ fāshāo le)" },
+    { id: 55, indonesia: "Panggilkan dokter", manado: "Pangge pa dokter", english: "Call a doctor", mandarin: "叫医生 (Jiào yīshēng)" },
+    { id: 56, indonesia: "Di mana apotek?", manado: "Apotek di mana?", english: "Where is the pharmacy?", mandarin: "药房在哪里？(Yàofáng zài nǎlǐ?)" },
+    { id: 57, indonesia: "Saya butuh obat", manado: "Butuh obat kita", english: "I need medicine", mandarin: "我需要药 (Wǒ xūyào yào)" },
+    { id: 58, indonesia: "Saya kehilangan dompet", manado: "Ilang dompet kita", english: "I lost my wallet", mandarin: "我的钱包丢了 (Wǒ de qiánbāo diū le)" },
+    { id: 59, indonesia: "Saya kehilangan paspor", manado: "Ilang paspor kita", english: "I lost my passport", mandarin: "我的护照丢了 (Wǒ de hùzhào diū le)" },
+    { id: 60, indonesia: "Tolong panggil polisi", manado: "Tolong pangge polisi", english: "Please call the police", mandarin: "请叫警察 (Qǐng jiào jǐngchá)" },
+    { id: 61, indonesia: "Ada restoran di sini?", manado: "Ada restoran di sini?", english: "Is there a restaurant here?", mandarin: "这里有餐厅吗？(Zhèlǐ yǒu cāntīng ma?)" },
+    { id: 62, indonesia: "Saya mau pesan makanan", manado: "Kita mo ba pesan makanan", english: "I want to order food", mandarin: "我想点餐 (Wǒ xiǎng diǎn cān)" },
+    { id: 63, indonesia: "Minta bonnya", manado: "Minta bill dang", english: "May I have the bill", mandarin: "请给我账单 (Qǐng gěi wǒ zhàngdān)" },
+    { id: 64, indonesia: "Termasuk pajak?", manado: "Pajak so termasuk?", english: "Is tax included?", mandarin: "含税吗？(Hán shuì ma?)" },
+    { id: 65, indonesia: "Boleh bayar pakai kartu?", manado: "Boleh bayar pake kartu?", english: "Can I pay by card?", mandarin: "可以用卡支付吗？(Kěyǐ yòng kǎ zhīfù ma?)" },
+    { id: 66, indonesia: "Ada ATM di sini?", manado: "Ada ATM di sini?", english: "Is there an ATM here?", mandarin: "这里有ATM吗？(Zhèlǐ yǒu ATM ma?)" },
+    { id: 67, indonesia: "Saya mau tukar uang", manado: "Kita mo tukar uang", english: "I want to exchange money", mandarin: "我想换钱 (Wǒ xiǎng huàn qián)" },
+    { id: 68, indonesia: "Kursnya berapa?", manado: "Kurs brapa?", english: "What is the exchange rate?", mandarin: "汇率是多少？(Huìlǜ shì duōshǎo?)" },
+    { id: 69, indonesia: "Saya mau check-in", manado: "Kita mo ba check-in", english: "I want to check-in", mandarin: "我想办理入住 (Wǒ xiǎng bànlǐ rùzhù)" },
+    { id: 70, indonesia: "Saya mau check-out", manado: "Kita mo ba check-out", english: "I want to check-out", mandarin: "我想退房 (Wǒ xiǎng tuìfáng)" },
+    { id: 71, indonesia: "Saya sudah pesan kamar", manado: "Kita so pesan kamar", english: "I have booked a room", mandarin: "我已经订了房间 (Wǒ yǐjīng dìng le fángjiān)" },
+    { id: 72, indonesia: "Kuncinya hilang", manado: "Kunci ilang", english: "The key is lost", mandarin: "钥匙丢了 (Yàoshi diū le)" },
+    { id: 73, indonesia: "Ada Wi-Fi?", manado: "Ada Wi-Fi?", english: "Is there Wi-Fi?", mandarin: "有Wi-Fi吗？(Yǒu Wi-Fi ma?)" },
+    { id: 74, indonesia: "Password Wi-Fi apa?", manado: "Password Wi-Fi apa?", english: "What is the Wi-Fi password?", mandarin: "Wi-Fi密码是什么？(Wi-Fi mìmǎ shì shénme?)" },
+    { id: 75, indonesia: "AC tidak dingin", manado: "AC nda dingin", english: "The AC is not cold", mandarin: "空调不冷 (Kōngtiáo bù lěng)" },
+    { id: 76, indonesia: "Tolong bersihkan kamar", manado: "Tolong bersihkan kamar", english: "Please clean the room", mandarin: "请打扫房间 (Qǐng dǎsǎo fángjiān)" },
+    { id: 77, indonesia: "Saya mau perpanjang menginap", manado: "Kita mo perpanjang tinggal", english: "I want to extend my stay", mandarin: "我想延长住宿 (Wǒ xiǎng yáncháng zhùsù)" },
+    { id: 78, indonesia: "Bisa laundry?", manado: "Boleh ba laundry?", english: "Is laundry service available?", mandarin: "有洗衣服务吗？(Yǒu xǐyī fúwù ma?)" },
+    { id: 79, indonesia: "Selamat jalan", manado: "Selamat jalan", english: "Have a safe trip", mandarin: "一路平安 (Yīlù píng'ān)" },
+    { id: 80, indonesia: "Hati-hati di jalan", manado: "Hati-hati di jalan", english: "Be careful on the road", mandarin: "路上小心 (Lùshàng xiǎoxīn)" },
+    { id: 81, indonesia: "Cepat sekali", manado: "Cepat skali", english: "Very fast", mandarin: "非常快 (Fēicháng kuài)" },
+    { id: 82, indonesia: "Pelan-pelan saja", manado: "Pelan-pelan", english: "Slowly", mandarin: "慢一点 (Màn yīdiǎn)" },
+    { id: 83, indonesia: "Bisa tunggu sebentar?", manado: "Boleh ba tunggu sadiki?", english: "Can you wait a moment?", mandarin: "能等一下吗？(Néng děng yīxià ma?)" },
+    { id: 84, indonesia: "Saya buru-buru", manado: "Ada buru-buru kita", english: "I am in a hurry", mandarin: "我赶时间 (Wǒ gǎn shíjiān)" },
+    { id: 85, indonesia: "Tidak masalah", manado: "Nda masalah", english: "No problem", mandarin: "没问题 (Méi wèntí)" },
+    { id: 86, indonesia: "Boleh saya duduk di sini?", manado: "Boleh kita duduk di sini?", english: "May I sit here?", mandarin: "我可以坐在这里吗？(Wǒ kěyǐ zuò zài zhèlǐ ma?)" },
+    { id: 87, indonesia: "Sendok / garpu", manado: "Sendok / garpu", english: "Spoon / fork", mandarin: "勺子 / 叉子 (Sháozi / chāzi)" },
+    { id: 88, indonesia: "Tolong tambah es", manado: "Tolong tambah es", english: "Please add ice", mandarin: "请加冰 (Qǐng jiā bīng)" },
+    { id: 89, indonesia: "Makanan pedas?", manado: "Makanan pedis?", english: "Is the food spicy?", mandarin: "这个辣吗？(Zhège là ma?)" },
+    { id: 90, indonesia: "Tidak pakai micin", manado: "Nda pake micin", english: "No MSG please", mandarin: "不要味精 (Bù yào wèijīng)" },
+    { id: 91, indonesia: "Saya suka Indonesia", manado: "Kita suka Indonesia", english: "I like Indonesia", mandarin: "我喜欢印度尼西亚 (Wǒ xǐhuān Yìndùníxīyà)" },
+    { id: 92, indonesia: "Orang Manado ramah", manado: "Orang Manado ramah", english: "Manado people are friendly", mandarin: "万鸦老人很友好 (Wànyālǎo rén hěn yǒuhǎo)" },
+    { id: 93, indonesia: "Makanan khas Manado enak", manado: "Makanan khas Manado enak", english: "Manado traditional food is delicious", mandarin: "万鸦老特色菜很好吃 (Wànyālǎo tèsè cài hěn hǎochī)" },
+    { id: 94, indonesia: "Bunaken indah sekali", manado: "Bunaken bagus skali", english: "Bunaken is very beautiful", mandarin: "布纳肯非常美 (Bùnàkěn fēicháng měi)" },
+    { id: 95, indonesia: "Saya mau snorkeling", manado: "Kita mo ba snorkeling", english: "I want to snorkel", mandarin: "我想浮潜 (Wǒ xiǎng fúqiǎn)" },
+    { id: 96, indonesia: "Sewa peralatan snorkel", manado: "Sewa alat snorkel", english: "Rent snorkeling gear", mandarin: "租浮潜装备 (Zū fúqiǎn zhuāngbèi)" },
+    { id: 97, indonesia: "Harga termasuk pemandu?", manado: "Harga so deng pemandu?", english: "Does the price include a guide?", mandarin: "价格包括导游吗？(Jiàgé bāokuò dǎoyóu ma?)" },
+    { id: 98, indonesia: "Saya mau beli oleh-oleh", manado: "Kita mo ba beli oleh-oleh", english: "I want to buy souvenirs", mandarin: "我想买纪念品 (Wǒ xiǎng mǎi jìniànpǐn)" },
+    { id: 99, indonesia: "Kapan kembali?", manado: "Kapan mo bale?", english: "When will you come back?", mandarin: "什么时候回来？(Shénme shíhòu huílái?)" },
+    { id: 100, indonesia: "Sampai jumpa lagi", manado: "Sampai jumpa", english: "See you again", mandarin: "再见 (Zàijiàn)" }
+];
+
+function renderDialect() {
+    return `
+        <div class="container dialect-container">
+            <div class="dialect-header">
+                <h2>🗣️ Insight to the Manado Dialect</h2>
+                <p>Pelajari frasa-frasa umum dalam dialek Manado untuk memudahkan komunikasi selama berwisata</p>
+            </div>
+            
+            <div class="dialect-controls">
+                <div class="search-box">
+                    <input type="text" id="searchPhrase" placeholder="Cari frasa dalam Bahasa Indonesia, Manado, atau Inggris..." autocomplete="off">
+                </div>
+                <div class="filter-box">
+                    <button class="filter-btn active" data-filter="all">Semua (${dialectPhrases.length})</button>
+                </div>
+                <div class="stats" id="resultStats">
+                    Menampilkan ${dialectPhrases.length} dari ${dialectPhrases.length} frasa
+                </div>
+            </div>
+            
+            <div class="dialect-table-wrapper">
+                <table class="dialect-table" id="dialectTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Bahasa Indonesia</th>
+                            <th>Dialek Manado</th>
+                            <th>English</th>
+                            <th>中文 (Mandarin)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dialectTableBody">
+                        ${renderDialectRows(dialectPhrases)}
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="dialect-cards" id="dialectCards">
+                ${renderDialectCards(dialectPhrases)}
+            </div>
+            
+            <div class="pronunciation-guide">
+                <h4>💡 Tips Pelafalan Dialek Manado</h4>
+                <p>Huruf "e" di akhir kata dibaca seperti "e" pada kata "emak" | "r" cenderung lembut | "ng" dibaca sengau seperti pada kata "sayang"</p>
+            </div>
+        </div>
+    `;
+}
+
+function renderDialectRows(phrases) {
+    return phrases.map(p => `
+        <tr>
+            <td>${p.id}</td>
+            <td><strong>${p.indonesia}</strong></td>
+            <td style="color: #ff6b35;">${p.manado}</td>
+            <td><em>${p.english}</em></td>
+            <td class="mandarin-cell">${p.mandarin}</td>
+        </tr>
+    `).join('');
+}
+
+function renderDialectCards(phrases) {
+    return phrases.map(p => `
+        <div class="dialect-card">
+            <div class="phrase-indo">${p.indonesia}</div>
+            <div class="phrase-manado">🗣️ ${p.manado}</div>
+            <div class="phrase-eng">📖 ${p.english}</div>
+            <div class="phrase-mandarin">🀄 ${p.mandarin}</div>
+            <hr>
+        </div>
+    `).join('');
+}
+
+let currentFilter = 'all';
+let currentSearch = '';
+
+function filterAndSearchPhrases() {
+    let filtered = [...dialectPhrases];
+    
+    // Apply search
+    if (currentSearch) {
+        const searchLower = currentSearch.toLowerCase();
+        filtered = filtered.filter(p => 
+            p.indonesia.toLowerCase().includes(searchLower) ||
+            p.manado.toLowerCase().includes(searchLower) ||
+            p.english.toLowerCase().includes(searchLower) ||
+            p.mandarin.toLowerCase().includes(searchLower)
+        );
+    }
+    
+    // Update UI
+    const tableBody = document.getElementById('dialectTableBody');
+    const cardsContainer = document.getElementById('dialectCards');
+    const resultStats = document.getElementById('resultStats');
+    
+    if (tableBody) {
+        tableBody.innerHTML = renderDialectRows(filtered);
+    }
+    if (cardsContainer) {
+        cardsContainer.innerHTML = renderDialectCards(filtered);
+    }
+    if (resultStats) {
+        resultStats.textContent = `Menampilkan ${filtered.length} dari ${dialectPhrases.length} frasa`;
+    }
+}
+
+function attachDialectEvents() {
+    const searchInput = document.getElementById('searchPhrase');
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            currentSearch = e.target.value;
+            filterAndSearchPhrases();
+        });
+    }
+}
 
 // State Management
 let currentPage = "home";
@@ -142,6 +361,10 @@ function loadPage(page) {
         default:
             main.innerHTML = renderHome();
             attachHomeEvents();
+        case "dialect":
+            main.innerHTML = renderDialect();
+            attachDialectEvents();
+            break;
     }
     
     // Update active nav
