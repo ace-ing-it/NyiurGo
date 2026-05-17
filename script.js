@@ -70,7 +70,7 @@ const culturalItems = [
         name: "Tari Kabasaran",
         description: "Tarian perang tradisional Minahasa yang menggambarkan keberanian prajurit. Para penari menggunakan pakaian adat lengkap dengan senjata parang dan tombak.",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlXt3Z040nKSOcU7gYiSu2NJcARKz-x5Xy_w&s",
-        video: "https://youtu.be/27CqwfBq5No?si=9gCv_u--VgVHUCNt",
+        video: "https://www.youtube.com/embed/27CqwfBq5No",
         history: "Tari Kabasaran berasal dari Minahasa, Sulawesi Utara. Tarian ini awalnya ditampilkan sebelum para prajurit berperang untuk membangkitkan semangat juang. Para penari disebut 'Kabasaran' yang berarti prajurit pilihan."
     },
     {
@@ -78,7 +78,7 @@ const culturalItems = [
         name: "Tari Maengket",
         description: "Tarian tradisional yang melambangkan rasa syukur atas hasil panen. Ditarikan secara berkelompok dengan gerakan lembut dan dinamis.",
         image: "https://1001indonesia.net/asset/2022/01/Tari-Maengket.jpg",
-        video: "https://youtu.be/hTzr3OBbPmo?si=_o8gN2omublEpWuhttps://i.ytimg.com/vi/hTzr3OBbPmo/maxresdefault.jpg",
+        video: "https://www.youtube.com/embed/hTzr3OBbPmo",
         history: "Maengket adalah tarian panen yang sudah ada sejak zaman nenek moyang orang Minahasa sebagai ungkapan terima kasih kepada Tuhan atas hasil panen yang melimpah."
     },
     {
@@ -86,7 +86,7 @@ const culturalItems = [
         name: "Kolintang",
         description: "Alat musik tradisional dari kayu yang menghasilkan nada indah. Dimainkan dengan cara dipukul menggunakan stik khusus.",
         image: "https://akcdn.detik.net.id/visual/2023/04/27/alat-musik-kolintang_169.jpeg?w=1200",
-        video: "https://youtu.be/qEERrx3-9Es?si=sQTlZhuldWG-9b_n",
+        video: "https://www.youtube.com/embed/qEERrx3-9Es",
         history: "Kolintang berasal dari kata 'Linting' yang berarti suara kecil. Alat musik ini berkembang di Minahasa sejak abad ke-19 dan terbuat dari kayu lokal seperti kayu cempaka."
     },
     {
@@ -94,7 +94,7 @@ const culturalItems = [
         name: "Rumah Panggung (Wale Wangko)",
         description: "Arsitektur tradisional rumah adat Minahasa dengan bentuk panggung dan atap yang menjulang tinggi.",
         image: "https://img.inews.co.id/media/1200/files/inews_new/2023/02/24/rumah_walewangko.jpg",
-        video: "https://www.youtube.com/embed/dQw4w9WgXchttps://youtu.be/zHY6nUVmGOU?si=9iz6XjC31Vv6PHHa",
+        video: "https://www.youtube.com/embed/zHY6nUVmGOU",
         history: "Wale Wangko adalah rumah adat Minahasa yang digunakan sebagai tempat musyawarah dan upacara adat. Dibangun tanpa paku dengan struktur kayu yang kuat."
     }
 ];
