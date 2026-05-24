@@ -1,66 +1,92 @@
 // Data Destinasi Wisata
+// Data Destinasi Wisata
 const destinations = [
     {
         id: 1,
         name: "Taman Nasional Bunaken",
-        description: "Surga bawah laut dengan keanekaragaman hayati laut tertinggi di dunia. Terumbu karang yang indah dan berbagai spesies ikan tropis.",
+        description: "Taman Nasional Bunaken berada di pusat segitiga terumbu karang dunia, dengan keanekaragaman hayati berupa luasan terumbu karang 11.709 ha dengan 68 genera dan 390 spesies, mangrove 2.434 ha dengan 28 spesies, serta padang lamun 5.108 ha. Taman ini juga menjadi habitat berbagai spesies ikan, moluska, reptil, dan mamalia laut.\n\nPembentukan Taman Nasional Bunaken berdasarkan SK Menteri Kehutanan Nomor 730/Kpts-II/1991 yang diteken pada 15 Oktober 1991, dan diresmikan oleh Presiden Soeharto pada 24 Desember 1992. Pada tahun 2005, kawasan ini secara resmi diakui sebagai situs warisan dunia oleh UNESCO.",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS25uP3SibFKNughsTDcDuLBorwmEkAYgSIBQ&s",
         location: "https://maps.google.com/?q=Bunaken+National+Park",
         hours: "08:00 - 17:00 WITA",
         rating: 4.8,
-        reviews: []
-
+        reviews: [],
+        sources: [
+            "https://ksdae.menlhk.go.id/info/4780/refleksi27-tahun-taman-nasional-bunaken.html",
+            "https://tn-bunaken.com/",
+            "https://id.wikipedia.org/wiki/Taman_Nasional_Bunaken"
+        ]
     },
     {
         id: 2,
         name: "Gunung Lokon",
-        description: "Gunung berapi aktif dengan pemandangan menakjubkan dari puncaknya. Spot favorit untuk hiking dan melihat sunrise.",
+        description: "Gunung api Lokon terdapat di Kota Administratif Tomohon, Provinsi Sulawesi Utara, dengan posisi geografi terletak pada 1°21'30\" Lintang Utara dan 124°47'30\" Bujur Timur, dengan tinggi puncaknya sekitar 1.579 m di atas permukaan laut.\n\nGunung Lokon adalah sebuah gunung berapi di dekat Kota Tomohon, Provinsi Sulawesi Utara. Sesuai namanya, Gunung Lokon berarti yang tertua dan terbesar. Sebagai salah satu dari dua puncak yang membentuk kompleks vulkanik Lokon-Empung, gunung ini menawarkan keindahan alam, fenomena geologi, serta sejarah sosial budaya masyarakat sekitarnya.",
         image: "https://cdn1-production-images-kly.akamaized.net/jSqbfbsOPPUisY7uahLFtp8faNw=/1200x900/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4841919/original/002398600_1716560987-WhatsApp_Image_2024-05-24_at_21.10.49.jpeg",
         location: "https://maps.google.com/?q=Mount+Lokon",
         hours: "06:00 - 16:00 WITA",
         rating: 4.5,
-        reviews: []
+        reviews: [],
+        sources: [
+            "https://geologi.esdm.go.id/media-center/press-release-aktivitas-vulkanik-g-lokon-juni-2023",
+            "https://id.wikipedia.org/wiki/Gunung_Lokon"
+        ]
     },
     {
         id: 3,
         name: "Danau Tondano",
-        description: "Danau terluas di Sulawesi Utara dengan pemandangan indah dan restoran apung yang terkenal.",
+        description: "Danau Tondano yang berada di dataran tinggi Minahasa merupakan danau terbesar di Sulawesi Utara. Danau Tondano terbentuk akibat aktivitas vulkanis gunung purba dan wilayahnya diampit oleh Gunung Kaweng, Bukit Tampusu, Pegunungan Lembean, dan Gunung Masarang.\n\nLuas danau ini sekitar 4.278 hektar dengan pemandangan yang menakjubkan. Terdapat 'pulau' yang bernama Pulau Likri yang berada di tengah danau. Danau Tondano merupakan salah satu danau yang diprioritaskan penanganannya secara nasional, dan statusnya telah dituangkan dalam Perda Sulut nomor 1 tahun 2014 tentang RTRW Provinsi Sulawesi Utara sebagai Kawasan Strategis Nasional.",
         image: "https://img.inews.co.id/media/620/files/inews_new/2023/08/11/legenda_danau_tondano.jpg",
         location: "https://maps.google.com/?q=Lake+Tondano",
         hours: "24 Jam",
         rating: 4.3,
-        reviews: []
+        reviews: [],
+        sources: [
+            "https://indonesia.go.id/kategori/pariwisata/8498/tansformasi-tondano-dari-warisan-budaya-minahasa-menjadi-ikon-wisata-digital",
+            "https://tonsealama.digitaldesa.id/wisata/danau-tondano"
+        ]
     },
     {
         id: 4,
         name: "Pa'Dior Cultural Center",
-        description: "Pusat kebudayaan yang menampilkan berbagai seni dan budaya khas Sulawesi Utara.",
+        description: "Pa'Dior adalah tempat wisata edukasi yang menyajikan berbagai wahana edukasi, di antaranya Wale Anti Narkoba, Museum Pinawetengan (museum edukasi tentang kebudayaan Minahasa), dan Wale Manguni (rumah edukasi tentang burung Manguni khas Minahasa). Di Pa'Dior juga terdapat galeri dan rumah produksi kain tenun yang diproduksi secara tradisional.\n\nPusat kebudayaan ini terletak di kawasan pegunungan berhawa dingin. Pengunjung bisa melihat berbagai bentuk kebudayaan mulai dari hasil tenun hingga alat musik khas Sulut. Salah satu daya tarik utamanya adalah contra bass berukuran raksasa yang masuk dalam Guinness Book of Records sebagai contra bass terbesar di dunia.",
         image: "https://indonesiakaya.com/wp-content/uploads/2020/10/7__IMG_8227_Di_sini_pengunjung_juga_bisa_melihat_alat_musik_tiup_contra_bass_berukuran_raksasa_CROP.jpg",
         location: "https://maps.google.com/?q=Pa%27Dior+Cultural+Center",
         hours: "09:00 - 18:00 WITA",
         rating: 4.6,
-        reviews: []
+        reviews: [],
+        sources: [
+            "https://padior.org/about",
+            "https://indonesiakaya.com/pustaka-indonesia/melihat-contra-bass-terbesar-di-pusat-kebudayaan-padior/"
+        ]
     },
     {
         id: 5,
         name: "Danau Linow",
-        description: "Danau unik yang dapat berubah warna karena kandungan belerang. Spot foto yang sangat populer.",
+        description: "Danau Linow adalah salah satu destinasi wisata terkenal di Kota Tomohon, Sulawesi Utara. Danau ini memiliki ciri khas unik yaitu warna air yang dapat berubah-ubah, mulai dari hijau, biru, hingga kekuningan. Perubahan warna ini terjadi karena kandungan belerang serta aktivitas vulkanik di bawah danau.\n\nDanau Linow adalah sebuah danau vulkanik yang terletak di Kota Tomohon, Sulawesi Utara. Beberapa lubang hidrotermal memuntahkan gas panas dari tepi dan kedalaman danau. Kata 'Linouw' berasal dari bahasa Minahasa yang berarti 'tempat berkumpulnya air'. Danau Linow terbentuk karena letusan gunung berapi sekitar 500.000 tahun yang lalu.",
         image: "https://www.tempatwisata.pro/users_media/3150/Danau%20Linow.jpg",
         location: "https://maps.google.com/?q=Lake+Linow",
         hours: "07:00 - 18:00 WITA",
         rating: 4.7,
-        reviews: []
+        reviews: [],
+        sources: [
+            "https://dispar.tomohon.go.id/danau-linow/",
+            "https://tiff.tomohon.go.id/tempat-wisata-di-kota-tomohon/",
+            "https://id.wikipedia.org/wiki/Danau_Linouw"
+        ]
     },
     {
         id: 6,
         name: "Paal Beach",
-        description: "Pantai dengan pasir putih dan air jernih. Cocok untuk bersantai dan snorkeling.",
+        description: "Pantai Paal adalah pantai yang terletak di Desa Marinsow, Kecamatan Likupang Timur, Kabupaten Minahasa Utara, Sulawesi Utara. Pantai ini terkenal dengan pasir putihnya yang lembut dan air laut yang jernih serta pemandangan yang eksotis.\n\nPantai Paal mulai dibuka untuk umum sekitar tahun 2014 dan kini telah berkembang menjadi tujuan wisata populer di kawasan Likupang. Nama 'Paal' sendiri berasal dari 'pal' atau patok yang dulunya digunakan sebagai pembatas kampung di daerah tersebut. Kawasan Likupang telah ditetapkan sebagai salah satu Destinasi Super Prioritas oleh pemerintah Indonesia.",
         image: "https://thumbs.dreamstime.com/b/beautiful-paal-beach-likupang-manado-indonesia-view-254006924.jpg",
         location: "https://maps.google.com/?q=Paal+Beach",
         hours: "07:00 - 18:00 WITA",
         rating: 4.4,
-        reviews: []
-    },
+        reviews: [],
+        sources: [
+            "https://www.pesonalikupang.com/destinations/pantai-paal-01k1xfwbwmvtkg3nrfvhe1yr9q/show",
+            "https://regional.kompas.com/read/2022/11/12/152058878/pantai-paal-wisata-di-sulawesi-utara-daya-tarik-jam-buka-dan-rute"
+        ]
+    }
 ];
 
 // Data Budaya
@@ -469,6 +495,19 @@ function showDestinationModal(destId) {
     const dest = destinations.find(d => d.id === destId);
     if(!dest) return;
     
+    // Generate sumber links HTML
+    let sourcesHTML = '';
+    if (dest.sources && dest.sources.length > 0) {
+        sourcesHTML = `
+            <div style="margin-top: 1.5rem; padding: 1rem; background: #f0f9f4; border-radius: 10px; border-left: 4px solid #1a5d4a;">
+                <strong>📚 Sumber Informasi Resmi:</strong>
+                <ul style="margin-top: 0.5rem; margin-left: 1rem;">
+                    ${dest.sources.map(src => `<li><a href="${src}" target="_blank" style="color: #ff6b35; word-break: break-all;">${src}</a></li>`).join('')}
+                </ul>
+            </div>
+        `;
+    }
+    
     const modal = document.createElement('div');
     modal.className = 'modal';
     modal.innerHTML = `
@@ -476,13 +515,17 @@ function showDestinationModal(destId) {
             <span class="close-modal">&times;</span>
             <h2>${dest.name}</h2>
             <img src="${dest.image}" alt="${dest.name}" style="width:100%; border-radius:10px; margin:1rem 0;" onerror="this.src='https://placehold.co/600x400?text=No+Image'">
-            <p><strong>📝 Deskripsi:</strong> ${dest.description}</p>
+            
+            <p><strong>📝 Deskripsi:</strong></p>
+            <p style="white-space: pre-line;">${dest.description}</p>
+            
             <p><strong>📍 Lokasi:</strong> <a href="${dest.location}" target="_blank" style="color:#ff6b35;">Lihat di Google Maps <i class="fas fa-external-link-alt"></i></a></p>
-            <p><strong>🎫 Harga Tiket:</strong> ${dest.ticketPrice}</p>
             <p><strong>⏰ Jam Operasional:</strong> ${dest.hours}</p>
             <div class="rating">
                 <strong>⭐ Rating:</strong> ${renderStars(dest.rating)} (${dest.rating.toFixed(1)})
             </div>
+            
+            ${sourcesHTML}
             
             <div class="review-input">
                 <h4>💬 Berikan Review</h4>
